@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/dblq992uw/image/upload/v1731517878/Web_Development/PROJECT_14/img/mainIcon_kugl1k.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/registration.css" />
+    <link rel="stylesheet" href="../css/utility.css" />
+    <title>SignUp Page</title>
+  </head>
+  <body class="center-center p-2 attachment-fixed flex-column">
+    <div id="mainLoginPage" class="mainLoginPage bg-white pady-4 b-radius">
+      <div id="loginSummaryContainer" class="loginSummaryContainer my-4">
+        <div id="loginContainer" class="loginContainer">
+          <h1 class="register color-salmon" id="register">Sign Up</h1>
+        </div>
+
+        <div id="mainSummaryContainer" class="mainSummaryContainer">
+          <span class="loginMessage color-darkgray" id="loginMessage"
+            >Enter your details below to register an account</span
+          >
+        </div>
+      </div>
+
+      <div id="mainFormContainer" class="mainFormContainer">
+        <form action="/signup" method="post">
+          <div id="loginInputContainer" class="loginInputContainer">
+            <div
+              id="emailContainer"
+              class="emailContainer my-4 border-bottom-1px-darkgray pb-2 flex writeEffect"
+            >
+              <span
+                id="emailIconContianer"
+                class="emailIconContainer inline-flex"
+                ><img
+                  class="emailIcon"
+                  id="emailIcon"
+                  src="https://res.cloudinary.com/dblq992uw/image/upload/v1731517874/Web_Development/PROJECT_14/img/envelope_e7w7r7.png"
+                  alt="envelope icon"
+              /></span>
+              <input
+                id="email"
+                class="email border-none outline-none ml-2 width-100"
+                name="email"
+                type="text"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div
+              id="userNameContainer"
+              class="userNameContainer my-4 border-bottom-1px-darkgray pb-2 flex writeEffect"
+            >
+              <span id="userNameIcon" class="userNameIcon">&#128100;</span>
+              <input
+                id="userName"
+                class="userName border-none outline-none ml-2 width-100"
+                name="username"
+                type="text"
+                placeholder="Enter your user name"
+              />
+            </div>
+
+            <div
+              id="passwordContainer"
+              class="passwordContainer border-bottom-1px-darkgray pb-2 my-4 flex writeEffect"
+            >
+              <span id="passwordIcon" class="passwordIcon">&#128274;</span>
+              <input
+                id="password"
+                class="password border-none outline-none ml-2 width-100"
+                name="password"
+                type="password"
+                placeholder="Enter your password"
+              />
+            </div>
+
+            <div
+              id="confirmPasswordContainer"
+              class="confirmPasswordContainer border-bottom-1px-darkgray pb-2 my-4 flex writeEffect"
+            >
+              <span id="confirmPasswordIcon" class="confirmPasswordIcon"
+                >&#128274;</span
+              >
+              <input
+                id="confirmPassword"
+                class="confirmPassword border-none outline-none ml-2 width-100"
+                name="confirmPassword"
+                type="password"
+                placeholder="Confirm your password"
+              />
+            </div>
+
+            <div id="showPasswordContainer" class="showPasswordContainer">
+              <input
+                id="showPasswordCheckbox"
+                class="showPasswordCheckbox outline-none pointer"
+                type="checkbox"
+              />
+              <label
+                id="labelForShowPassword"
+                class="labelForShowPassword pointer color-darkgray"
+                for="showPasswordCheckbox"
+                >Show Password</label
+              >
+            </div>
+          </div>
+
+          <div id="loginButtonContainer" class="loginButtonContainer">
+            <div id="loginBtnContainer" class="loginBtnContainer my-4">
+              <button
+                id="registerBtn"
+                class="registerBtn width-moz-available pointer p-2 b-radius outline-none border-none color-white"
+              >
+                SignUp
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div id="signUpContainer" class="signUpContainer flex">
+        <p id="signUpPara" class="signUpPara color-darkgray">
+          have a account?
+          <span id="signUpLinkContainer" class="signUpLinkContainer">
+            <a
+              class="signUpLink text-none color-salmon underline-hover"
+              id="signUpLink"
+              href="/signin"
+              >SignIn Here</a
+            >
+          </span>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="../js/utilityFunctions/gotoHomePage.js"></script>
+  <script src="../js/utilityFunctions/alert.js"></script>
+  <script src="../js/utilityFunctions/error.js"></script>
+  <script type="module" src="../js/utilityFunctions/utility.js"></script>
+  <script type="module" src="../js/registration.js"></script>
+</html>

@@ -1,0 +1,36 @@
+.mainUploadContainer{
+	width: 40%;
+}
+
+.mainUploadContainer > *{
+	width: 70%;
+	margin: 0px auto;
+	padding: 2%;
+}
+
+.fileIcon{
+	width: 15px;
+}
+
+@media only screen and (max-width: 720px){
+        .mainUploadContainer{
+                width: 80% !important;
+        }
+}
+
+@media only screen and (max-width: 400px){
+        .mainUploadContainer > *{
+                width: 80%;
+        }
+}
+
+@media only screen and (max-width: 280px){
+        .mainUploadContainer {
+                width: 85%;
+        }
+
+        .mainUploadContainer > *{
+                width: 85%;
+        }
+}
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/dblq992uw/image/upload/v1731517878/Web_Development/PROJECT_14/img/mainIcon_kugl1k.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/uploadPage.css" />
+    <link rel="stylesheet" href="../css/utility.css" />
+  </head>
+  <body class="center-center p-2 background-gradient-sal-reb flex-column">
+    <div
+      id="mainUploadContainer"
+      class="mainUploadContainer bg-white pady-4 b-radius my-1"
+    >
+      <div
+        id="mainUploadSummaryContainer"
+        class="mainUploadSummaryContainer my-4"
+      >
+        <div id="mainUploadHeadingContainer" class="mainUploadHeadingContainer">
+          <h1 id="upload" class="upload color-salmon">Upload</h1>
+        </div>
+
+        <div id="mainSummaryContainer" class="mainSummaryContainer">
+          <span id="uploadMessage" class="uploadMessage color-darkgray">
+            Select a Video and Thumnail. If no thumbnail provided we will use
+            our Default thumbnail.
+          </span>
+        </div>
+      </div>
+
+      <div id="mainUploadInputContianer" class="mainUploadInputContianer">
+        <form enctype="multipart/form-data" action="/upload" method="post">
+          <div
+            id="mainFileInputContainer"
+            class="mainFileInputContainer border-bottom-1px-darkgray pb-2 flex align-center my-4"
+          >
+            <span
+              id="mainFileIconContianer"
+              class="mainFileIconContainer display-inherit"
+            >
+              <img
+                id="fileIcon"
+                class="fileIcon"
+                src="https://res.cloudinary.com/dblq992uw/image/upload/v1731517874/Web_Development/PROJECT_14/img/fileIcon_zeyoyc.png"
+                alt="file icon"
+              />
+            </span>
+
+            <label
+              id="labelForFile"
+              class="labelForFile border-none outline-none ml-2 width-max pointer color-darkgray"
+              for="file"
+              >Choose a File</label
+            >
+            <input
+              id="file"
+              class="none"
+              type="file"
+              accept="video/*"
+              name="file"
+            />
+          </div>
+
+          <div
+            id="mainThumbnailInputContainer"
+            class="mainThumbnailInputContainer border-bottom-1px-darkgray pb-2 flex align-center my-4"
+          >
+            <span
+              id="mainThumbnailIconContianer"
+              class="mainThumbnailIconContainer display-inherit"
+            >
+              <img
+                id="thumbnailIcon"
+                class="fileIcon"
+                src="https://res.cloudinary.com/dblq992uw/image/upload/v1731517874/Web_Development/PROJECT_14/img/fileIcon_zeyoyc.png"
+                alt="Thumbnail Icon"
+              />
+            </span>
+
+            <label
+              id="labelForThumbnail"
+              class="labelForThumbnail border-none outline-none ml-2 width-max pointer color-darkgray"
+              for="thumbnail"
+              >Choose a Thumbnail</label
+            >
+            <input
+              id="thumbnail"
+              class="none"
+              type="file"
+              accept="image/*"
+              name="thumbnail"
+            />
+          </div>
+
+          <div
+            id="mainSumbitFileBtnContainer"
+            class="mainSumbitFileBtnContainer my-4"
+          >
+            <button
+              id="sumbitFile"
+              class="sumbitFile pointer p-2 b-radius outline-none border-none width-100 color-white background-gradient-sal-reb"
+              type="submit"
+            >
+              Sumbit File
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <loading-spinner class="none my-2" id="spinner"></loading-spinner>
+  </body>
+  <script src="../js/utilityFunctions/gotoHomePage.js"></script>
+  <script src="../js/utilityFunctions/alert.js"></script>
+  <script src="../js/utilityFunctions/error.js"></script>
+  <script type="module" src="../js/utilityFunctions/utility.js"></script>
+  <script src="../js/utilityFunctions/spinner.js"></script>
+  <script type="module" src="../js/uploadPage.js"></script>
+</html>

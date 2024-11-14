@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="height-100">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Super Player</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/utility.css">
+	<link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/dblq992uw/image/upload/v1731517878/Web_Development/PROJECT_14/img/mainIcon_kugl1k.png">
+</head>
+<body class="center-center p-2 attachment-fixed flex-column">
+
+<div id="mainContainer" class="mainContainer width-75 m-auto border1px-black p-2 bg-black b-radius-30px overflow-y-scroll">
+	<div id="mainBothSideContainer" class="mainBothSideContainer flex">
+		<div id="mainLeftSideContainer" class="mainLeftSideContainer bg-inherit color-white">
+			<div id="mainIconAndNameContainer" class="mainIconAndNameContainer flex">
+		
+				<div id="mainIconContainer" class="mainIconContainer mr-3 center-center">
+					<img id="icon" class="icon" src="https://res.cloudinary.com/dblq992uw/image/upload/v1731517878/Web_Development/PROJECT_14/img/mainIcon_kugl1k.png" alt="main icon">
+				</div>
+				
+				<div id="mainNameContainer" class="mainNameContainer center-center">
+					<span id="name" class="name width-max bold">Super Player</span>
+				</div>
+
+				<div id="mainHamburgerContainer" class="mainHamburgerContainer center-center fontrem-2 none ml-auto pointer">
+					&equiv;
+				</div>
+
+			</div>
+		
+			<div id="mainNavbarContainer" class="mainNavbarContainer over-hidden">
+				<nav id="navbar" class="navbar">
+					<ul id="mainListContainer" class="mainListContainer">
+						<li id="list-1" class="list">
+							<span id="listItem-1" class="listItem">
+								<img id="contactIcon" class="contactIcon" src="https://res.cloudinary.com/dblq992uw/image/upload/v1731517874/Web_Development/PROJECT_14/img/contactIcon_u3bgzt.png" alt="contact Icon">
+							</span>
+							<a id="linkList-1" class="linkList" href="/contact">Contact</a>
+						</li>
+						<li id="list-2" class="list none">
+							<span id="listItem-2" class="listItem">
+								<img id="aboutIcon" class="aboutIcon" src="https://res.cloudinary.com/dblq992uw/image/upload/v1731517872/Web_Development/PROJECT_14/img/aboutIcon_egx7fa.webp" alt="about Icon">
+							</span>
+							<a id="linkList-2" class="linkList" href="/about">About</a>
+						</li>
+						<li id="list-3" class="list">
+							<span id="listItem-3" class="listItem">
+								<img id="signUpIcon" class="signUpIcon" src="https://res.cloudinary.com/dblq992uw/image/upload/v1731517881/Web_Development/PROJECT_14/img/signup_jujtcp.png" alt="signup Icon">
+							</span>
+							<a id="linkList-3" class="linkList" href="/signup">Sign Up</a>
+						</li>
+						<li id="list-4" class="list">
+							<span id="listItem-4" class="listItem">
+								<img id="signInIcon" class="signInIcon" src="https://res.cloudinary.com/dblq992uw/image/upload/v1731517880/Web_Development/PROJECT_14/img/signin_eros1f.png" alt="signin Icon">
+							</span>
+							<a id="linkList-4" class="linkList" href="/signin">Sign In</a>
+						</li>
+						<li id="list-5" class="list none">
+							<span id="listItem-5" class="listItem">
+								<img id="uploadIcon" class="uploadIcon" src="https://res.cloudinary.com/dblq992uw/image/upload/v1731517883/Web_Development/PROJECT_14/img/uploadIcon_ex33dv.png" alt="upload Icon">
+							</span>
+							<a id="linkList-5" class="linkList" href="/upload">Upload Video</a>
+						</li>
+						<li id="list-6" class="list none">
+							<span id="listItem-6" class="listItem">
+								<img id="logoutIcon" class="logoutIcon" src="https://res.cloudinary.com/dblq992uw/image/upload/v1731517877/Web_Development/PROJECT_14/img/logout_myxtss.png" alt="logout Icon">
+							</span>
+							<a id="linkList-6" class="linkList" href="/logout">Logout Video</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<hr class="mx-2">
+
+		<div id="mainRightSideContainer" class="mainRightSideContainer width-moz-available flex flex-column">
+			<div id="mainSearchContainer" class="mainSearchContainer flex">
+				<div id="mainSearchBarContainer" class="mainSearchBarContainer border1px-white center-center pady-1 bg-white width-100 b-radius-30px">
+					<input id="searchBar" class="searchBar outline-none border-none width-100 p-1 b-radius-30px" type="text" placeholder="Search a Video">
+					<img id="searchBtn" class="searchBtn pointer" src="https://res.cloudinary.com/dblq992uw/image/upload/v1731517879/Web_Development/PROJECT_14/img/searchIcon_azoneu.png" alt="search icon">
+				</div>
+			</div>
+
+			<div id="mainVideoContainer" class="mainVideoContainer ">
+				<div id="mainVideoCardContainer" class="mainVideoCardContainer center-center flex-column">
+					<video class="width-100 border1px-white b-radius-30px" id="video" controls controlslist>
+						<source src="https://res.cloudinary.com/dblq992uw/video/upload/v1731518308/Web_Development/PROJECT_14/video/test3_rwsfhi.mp4" type="video/mp4"></source>
+					</video>
+					<loading-spinner id="spinner" class="none my-2"></loading-spinner>
+				</div>
+
+				<div id="mainOtherVideoContainer" class="mainOtherVideoContainer center-center flex-wrap user-select-none"></div>
+			</div>
+		</div>
+
+</div>
+		<div id="mainFooterContainer" class="mainFooterContainer">
+			<footer id="footer" class="footer">
+				<p id="footerPara" class="footerPara color-gray center">
+					CopyRight @ 2022-2099 Yashlodhi | All Right Reserved
+				</p>
+			</footer>
+		</div>
+
+	</div>
+</body>
+	<script src="../js/utilityFunctions/alert.js"></script>	
+	<script type="module" src="../js/utilityFunctions/utility.js"></script>
+	<script src="../js/utilityFunctions/spinner.js"></script>
+	<script type="module" src="../js/script.js"></script>
+</html>

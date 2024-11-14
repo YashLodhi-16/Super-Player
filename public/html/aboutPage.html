@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/aboutPage.css" />
+    <link rel="stylesheet" href="../css/utility.css" />
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/dblq992uw/image/upload/v1731517878/Web_Development/PROJECT_14/img/mainIcon_kugl1k.png"
+      type="image/x-icon"
+    />
+    <title></title>
+  </head>
+  <body class="p-2 center-center background-gradient-sal-reb flex-column">
+    <div
+      id="mainContainer"
+      class="mainContainer width-40 b-radius-30px bg-white center-center pady-4 flex-column"
+    >
+      <div
+        id="mainHeadingSummaryContainer"
+        class="mainHeadingSummaryContainer my-4"
+      >
+        <div id="mainHeadingContainer" class="mainHeadingContainer">
+          <h1 id="heading" class="heading color-salmon">User Details</h1>
+        </div>
+
+        <div id="mainSummaryContainer" class="mainSummaryContainer">
+          <span id="summary" class="summary color-darkgray"
+            >We are happy to you!</span
+          >
+        </div>
+      </div>
+
+      <div id="mainUserDetailsContainer" class="mainUserDetailsContainer">
+        <div
+          id="mainUsernameContainer"
+          class="mainUsernameContainer flex border-bottom-1px-darkgray pady-2 my-4"
+        >
+          <span id="usernameIconContainer" class="usernameIconContainer"
+            >&#128100;</span
+          >
+          <input
+            id="username"
+            class="username outline-none border-none ml-2 width-100"
+            type="text"
+            readonly
+          />
+        </div>
+
+        <div
+          id="mainEmailContainer"
+          class="mainEmailContainer flex border-bottom-1px-darkgray pady-2 my-4"
+        >
+          <span id="mainEmailIconContainer" class="mainEmailIconContainer">
+            <img
+              id="emailIcon"
+              class="emailIcon setIconWidth"
+              src="https://res.cloudinary.com/dblq992uw/image/upload/v1731517874/Web_Development/PROJECT_14/img/envelope_e7w7r7.png"
+              alt="email icon"
+            />
+          </span>
+
+          <input
+            id="email"
+            class="email ml-2 outline-none border-none width-100"
+            type="email"
+            readonly
+          />
+        </div>
+      </div>
+
+      <div
+        id="mainDeveloperMessageContainer"
+        class="mainDeveloperMessageContainer pady-2 my-4 flex align-center border-bottom-1px-darkgray"
+      >
+        <span id="mainAppIconContainer" class="mainAppIconContainer flex">
+          <img
+            id="appIconContainery"
+            class="appIconContainer emailIcon"
+            src="https://res.cloudinary.com/dblq992uw/image/upload/v1731517878/Web_Development/PROJECT_14/img/mainIcon_kugl1k.png"
+            alt="app logo"
+          />
+        </span>
+
+        <span id="devMsg" class="devMsg ml-2">
+          Dev:- Thanks for using our app.
+        </span>
+      </div>
+    </div>
+  </body>
+  <script src="../js/utilityFunctions/gotoHomePage.js"></script>
+  <script type="module" src="../js/utilityFunctions/getUserData.js"></script>
+</html>

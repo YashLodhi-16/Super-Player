@@ -1,0 +1,51 @@
+body{
+	background: linear-gradient(salmon, rebeccapurple); 
+}
+
+.mainLoginPage{
+	width: 40%;
+}
+
+.mainLoginPage > *{
+	width: 70%;
+	margin: 0px auto;
+	padding: 2%;
+}
+
+.emailIcon{
+	width: 15px;
+}
+
+.writeEffect:hover, .writeEffect:focus-within{
+	border-color: rebeccapurple;
+}
+
+.registerBtn{
+	background: linear-gradient(90deg, salmon, rebeccapurple);
+}
+
+.registerBtn:hover, .registerBtn:focus{
+	background: linear-gradient(90deg, #ff1b00, #8000ff);
+}
+
+@media only screen and (max-width: 720px){
+	.mainLoginPage{
+		width: 80% !important;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.mainLoginPage > * {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 280px){
+	.mainLoginPage{
+		width: 85% !important;
+	}
+
+	.mainLoginPage > * {
+		width: 85%;
+	}
+}

@@ -1,0 +1,45 @@
+.mainContainer{
+	width: 40%;
+}
+
+.mainContainer > *{
+	width: 70%;
+}
+
+.form > *:hover, .form > *:focus-within{
+	border-color: rebeccapurple;
+}
+
+.setIconWidth{
+	width: 15px;
+}
+
+.sumbitBtn:hover, .sumbitBtn:focus{
+	background: linear-gradient(90deg, #ff1b00, #8000ff);
+}
+
+@media only screen and (max-width: 720px){
+	.mainContainer{
+		width: 70%;
+	}
+
+	.mainContainer > *{
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.mainContainer{
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 280px){
+	.mainContainer{
+		width: 90%;
+	}
+
+	.mainContainer > * {
+		width: 80%;
+	}
+}

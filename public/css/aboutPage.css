@@ -1,0 +1,33 @@
+.emailIcon{
+	width: 15px;
+}
+
+.mainContainer > * {
+	width: 70%;
+}
+
+@media only screen and (max-width: 720px){
+	.mainContainer{
+		width: 70% !important;
+	}
+
+	.mainContainer > *{
+		width: 80% !important;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.mainContainer{
+		width: 80% !important;
+	}
+}
+
+@media only screen and (max-width: 280px){
+	.mainContainer{
+		width: 90% !important;
+	}
+
+	.mainContainer > * {
+		width: 80% !important;
+	}
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/dblq992uw/image/upload/v1731517878/Web_Development/PROJECT_14/img/mainIcon_kugl1k.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/loginPage.css" />
+    <link rel="stylesheet" href="../css/utility.css" />
+    <title>Login Page</title>
+  </head>
+  <body class="center-center p-2 attachment-fixed flex-column">
+    <div id="mainLoginPage" class="mainLoginPage bg-white pady-4 b-radius">
+      <div id="loginSummaryContainer" class="loginSummaryContainer my-4">
+        <div id="loginContainer" class="loginContainer">
+          <h1 class="login color-salmon" id="login">Login</h1>
+        </div>
+
+        <div id="mainSummaryContainer" class="mainSummaryContainer">
+          <span class="loginMessage color-darkgray" id="loginMessage"
+            >Enter your details below to continue</span
+          >
+        </div>
+      </div>
+
+      <div id="loginInputContainer" class="loginInputContainer">
+        <div
+          id="emailContainer"
+          class="emailContainer my-4 border-bottom-1px-darkgray pb-2 flex"
+        >
+          <span id="emailIconContianer" class="emailIconContainer inline-flex"
+            ><img
+              class="emailIcon width-15px"
+              id="emailIcon"
+              src="https://res.cloudinary.com/dblq992uw/image/upload/v1731517874/Web_Development/PROJECT_14/img/envelope_e7w7r7.png"
+              alt="envelope icon"
+          /></span>
+          <input
+            id="email"
+            class="email border-none outline-none ml-2 width-100"
+            type="email"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <div
+          id="passwordContainer"
+          class="passwordContainer border-bottom-1px-darkgray pb-2 my-4 flex"
+        >
+          <span id="passwordIcon" class="passwordIcon">&#128274;</span>
+          <input
+            id="password"
+            class="password border-none outline-none ml-2 width-100"
+            type="password"
+            placeholder="Enter your password"
+          />
+        </div>
+
+        <div id="showPasswordContainer" class="showPasswordContainer">
+          <input
+            id="showPasswordCheckbox"
+            class="showPasswordCheckbox outline-none pointer"
+            type="checkbox"
+          />
+          <label
+            id="labelForShowPassword"
+            class="labelForShowPassword pointer color-darkgray"
+            for="showPasswordCheckbox"
+            >Show Password</label
+          >
+        </div>
+      </div>
+
+      <div id="loginButtonContainer" class="loginButtonContainer">
+        <div id="forgotPasswordContainer" class="forgotPasswordContainer my-4">
+          <span id="forgotPassword" class="forgotPassword pointer"
+            ><a
+              id="forgotPasswordLink"
+              class="forgotPasswordLink text-none underline-hover color-darkgray"
+              href="/forgotPassword"
+              >Forgot Password ></a
+            ></span
+          >
+        </div>
+
+        <div id="loginBtnContainer" class="loginBtnContainer my-4">
+          <button
+            id="loginBtn"
+            class="loginBtn width-moz-available pointer p-2 b-radius outline-none border-none color-white"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+
+      <div id="signUpContainer" class="signUpContainer flex">
+        <p id="signUpPara" class="signUpPara color-darkgray">
+          Don't have an account?
+          <span id="signUpLinkContainer" class="signUpLinkContainer">
+            <a
+              class="signUpLink text-none color-salmon underline-hover"
+              id="signUpLink"
+              href="/signup"
+              >Sign Up Here</a
+            >
+          </span>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="../js/utilityFunctions/gotoHomePage.js"></script>
+  <script src="../js/utilityFunctions/alert.js"></script>
+  <script src="../js/utilityFunctions/error.js"></script>
+  <script type="module" src="../js/utilityFunctions/utility.js"></script>
+  <script type="module" src="../js/loginPage.js"></script>
+</html>

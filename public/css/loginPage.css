@@ -1,0 +1,51 @@
+body{
+	background: linear-gradient(salmon, rebeccapurple);
+}
+
+.mainLoginPage{
+	width: 40%;
+}
+
+.mainLoginPage > *{
+	width: 70%;
+	margin: 0px auto;
+	padding: 2%;
+}
+
+.width-15px{
+	width: 15px;
+}
+
+.emailContainer:hover, .emailContainer:focus-within , .passwordContainer:hover, .passwordContainer:focus-within{
+	border-color: rebeccapurple;
+}
+
+.loginBtn{
+	background: linear-gradient(90deg, salmon, rebeccapurple);
+}
+
+.loginBtn:hover, .loginBtn:focus{
+  background: linear-gradient(90deg, #ff1b00, #8000ff);
+}
+
+@media only screen and (max-width: 720px){
+	.mainLoginPage{
+		width: 80% !important;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.mainLoginPage > *{
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 280px){
+	.mainLoginPage{
+		width: 85%;
+	}
+
+	.mainLoginPage > *{
+		width: 85%;
+	}
+}

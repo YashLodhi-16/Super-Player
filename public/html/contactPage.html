@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://res.cloudinary.com/dblq992uw/image/upload/v1731517878/Web_Development/PROJECT_14/img/mainIcon_kugl1k.png"
+    />
+    <link rel="stylesheet" href="../css/utility.css" />
+    <link rel="stylesheet" href="../css/contactPage.css" />
+  </head>
+  <body class="center-center p-2 background-gradient-sal-reb flex-column">
+    <div
+      id="mainContainer"
+      class="mainContainer b-radius-30px bg-white center-center pady-4 flex-column"
+    >
+      <div
+        id="mainContactSummaryContainer"
+        class="mainContactSummaryContainer my-4 p-2"
+      >
+        <div id="mainContactContainer" class="mainContactContainer">
+          <h1 id="contact" class="contact color-salmon">Contact</h1>
+        </div>
+
+        <div id="mainSummaryContainer" class="mainSummaryContainer">
+          <span id="summary" class="summary color-darkgray"
+            >Enter your details below to contact us.</span
+          >
+        </div>
+      </div>
+
+      <div id="mainLoginInputContainer" class="mainLoginInputContainer p-2">
+        <form method="post" class="form" id="form">
+          <div
+            id="mainNameContainer"
+            class="mainNameContainer flex border-bottom-1px-darkgray pady-2 my-4"
+          >
+            <span id="mainUserIconContaienr" class="mainUserIconContaienr">
+              &#128100;
+            </span>
+            <input
+              id="userName"
+              class="userName ml-2 outline-none border-none width-100"
+              type="text"
+              name="username"
+              placeholder="Enter your Name"
+            />
+          </div>
+
+          <div
+            id="mainEmailContainer"
+            class="mainEmailContainer flex border-bottom-1px-darkgray pady-2 my-4"
+          >
+            <span id="mainEmailIconContainer" class="mainEmailIconContainer">
+              <img
+                id="emailIcon"
+                class="emailIcon setIconWidth"
+                src="https://res.cloudinary.com/dblq992uw/image/upload/v1731517874/Web_Development/PROJECT_14/img/envelope_e7w7r7.png"
+                alt="email icon"
+              />
+            </span>
+
+            <input
+              id="email"
+              class="email ml-2 outline-none border-none width-100"
+              type="email"
+              name="email"
+              placeholder="Enter your Email"
+            />
+          </div>
+
+          <div
+            id="mainQueryContainer"
+            class="mainQueryContainer flex border-bottom-1px-darkgray pady-2 my-4"
+          >
+            <span id="mainQueryIconContainer" class="mainQueryIconContainer">
+              <img
+                id="queryIcon"
+                class="queryIcon setIconWidth"
+                src="https://res.cloudinary.com/dblq992uw/image/upload/v1731517879/Web_Development/PROJECT_14/img/queryIcon_n51jkx.png"
+                alt="query icon"
+              />
+            </span>
+
+            <textarea
+              id="query"
+              class="query ml-2 outline-none border-none width-100 border-right-1px-darkgray"
+              name="textarea"
+              placeholder="Enter your Query"
+            ></textarea>
+          </div>
+
+          <div id="mainSumbitButtonContainer" class="mainSumbitButtonContainer">
+            <button
+              id="sumbitBtn"
+              class="sumbitBtn width-100 pointer p-2 b-radius outline-none color-white border-none background-gradient-sal-reb"
+              type="submit"
+            >
+              Sumbit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="../js/utilityFunctions/gotoHomePage.js"></script>
+  <script src="../js/utilityFunctions/alert.js"></script>
+  <script src="../js/utilityFunctions/error.js"></script>
+  <script type="module" src="../js/utilityFunctions/utility.js"></script>
+  <script type="module" src="../js/utilityFunctions/getUserData.js"></script>
+  <script type="module" src="../js/contactPage.js"></script>
+</html>
